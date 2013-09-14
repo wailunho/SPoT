@@ -67,4 +67,19 @@
     [self resetImage];
 }
 
+-(void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+    //Show the photo on the screen as much as we can
+    float width_ratio = self.scrollView.bounds.size.width / self.imageView.bounds.size.width;
+    float heigth_ratio = self.scrollView.bounds.size.width / self.imageView.bounds.size.height;
+    if(width_ratio < 1.0 || heigth_ratio < 1.0)
+    {
+        if(width_ratio < heigth_ratio)
+            self.scrollView.zoomScale = width_ratio;
+        else
+            self.scrollView.zoomScale = heigth_ratio;
+    }
+}
+
 @end

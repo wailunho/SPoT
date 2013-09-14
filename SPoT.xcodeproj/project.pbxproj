@@ -23,6 +23,8 @@
 		3DC5557317E3FB900073BAC0 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC5557217E3FB900073BAC0 /* ImageViewController.m */; };
 		3DC5557617E3FC900073BAC0 /* FlickrPhotoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC5557517E3FC900073BAC0 /* FlickrPhotoTVC.m */; };
 		3DC5557917E401D10073BAC0 /* TagsFlickrPhotoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC5557817E401D10073BAC0 /* TagsFlickrPhotoTVC.m */; };
+		3DFAAC6417E516090063AE1D /* RecentPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFAAC6317E516090063AE1D /* RecentPhotos.m */; };
+		3DFAAC6717E51B780063AE1D /* RecentsFlickrPhotoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFAAC6617E51B770063AE1D /* RecentsFlickrPhotoTVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,10 @@
 		3DC5557517E3FC900073BAC0 /* FlickrPhotoTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoTVC.m; sourceTree = "<group>"; };
 		3DC5557717E401D00073BAC0 /* TagsFlickrPhotoTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagsFlickrPhotoTVC.h; sourceTree = "<group>"; };
 		3DC5557817E401D10073BAC0 /* TagsFlickrPhotoTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagsFlickrPhotoTVC.m; sourceTree = "<group>"; };
+		3DFAAC6217E516090063AE1D /* RecentPhotos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecentPhotos.h; path = Model/RecentPhotos.h; sourceTree = "<group>"; };
+		3DFAAC6317E516090063AE1D /* RecentPhotos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecentPhotos.m; path = Model/RecentPhotos.m; sourceTree = "<group>"; };
+		3DFAAC6517E51B770063AE1D /* RecentsFlickrPhotoTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentsFlickrPhotoTVC.h; sourceTree = "<group>"; };
+		3DFAAC6617E51B770063AE1D /* RecentsFlickrPhotoTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentsFlickrPhotoTVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,9 @@
 				3DC5557817E401D10073BAC0 /* TagsFlickrPhotoTVC.m */,
 				3DC5557117E3FB900073BAC0 /* ImageViewController.h */,
 				3DC5557217E3FB900073BAC0 /* ImageViewController.m */,
+				3DFAAC6517E51B770063AE1D /* RecentsFlickrPhotoTVC.h */,
+				3DFAAC6617E51B770063AE1D /* RecentsFlickrPhotoTVC.m */,
+				3DFAAC6117E515CA0063AE1D /* Model */,
 				3DC5557017E3FAE80073BAC0 /* Images */,
 				3DC5554B17E3F7B00073BAC0 /* Supporting Files */,
 			);
@@ -145,6 +154,15 @@
 				3DC5556D17E3FADF0073BAC0 /* clock.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		3DFAAC6117E515CA0063AE1D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3DFAAC6217E516090063AE1D /* RecentPhotos.h */,
+				3DFAAC6317E516090063AE1D /* RecentPhotos.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +240,8 @@
 				3DC5557317E3FB900073BAC0 /* ImageViewController.m in Sources */,
 				3DC5557617E3FC900073BAC0 /* FlickrPhotoTVC.m in Sources */,
 				3DC5557917E401D10073BAC0 /* TagsFlickrPhotoTVC.m in Sources */,
+				3DFAAC6417E516090063AE1D /* RecentPhotos.m in Sources */,
+				3DFAAC6717E51B780063AE1D /* RecentsFlickrPhotoTVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

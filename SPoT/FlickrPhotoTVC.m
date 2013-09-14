@@ -8,6 +8,7 @@
 
 #import "FlickrPhotoTVC.h"
 #import "FlickrFetcher.h"
+#import "RecentPhotos.h"
 
 @interface FlickrPhotoTVC ()
 
@@ -57,10 +58,12 @@
         NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
         if (indexPath) {
             if ([segue.identifier isEqualToString:@"Show Photo"]) {
-                if ([segue.destinationViewController respondsToSelector:@selector(setImageURL:)]) {
+                if ([segue.destinationViewController respondsToSelector:@selector(setImageURL:)])
+                {
                     NSURL *url = [FlickrFetcher urlForPhoto:self.photos[indexPath.row] format:FlickrPhotoFormatLarge];
                     [segue.destinationViewController performSelector:@selector(setImageURL:) withObject:url];
                     [segue.destinationViewController setTitle:[self titleForRow:indexPath.row]];
+                    [RecentPhotos addPhoto:self.photos[indexPath.row]];
                 }
             }
         }
