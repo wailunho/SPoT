@@ -22,7 +22,7 @@
 		3DC5556F17E3FADF0073BAC0 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DC5556D17E3FADF0073BAC0 /* clock.png */; };
 		3DC5557317E3FB900073BAC0 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC5557217E3FB900073BAC0 /* ImageViewController.m */; };
 		3DC5557617E3FC900073BAC0 /* FlickrPhotoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC5557517E3FC900073BAC0 /* FlickrPhotoTVC.m */; };
-		3DC5557917E401D10073BAC0 /* StanfordFlickrPhotoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC5557817E401D10073BAC0 /* StanfordFlickrPhotoTVC.m */; };
+		3DC5557917E401D10073BAC0 /* TagsFlickrPhotoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC5557817E401D10073BAC0 /* TagsFlickrPhotoTVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,8 +49,8 @@
 		3DC5557217E3FB900073BAC0 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		3DC5557417E3FC900073BAC0 /* FlickrPhotoTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoTVC.h; sourceTree = "<group>"; };
 		3DC5557517E3FC900073BAC0 /* FlickrPhotoTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoTVC.m; sourceTree = "<group>"; };
-		3DC5557717E401D00073BAC0 /* StanfordFlickrPhotoTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StanfordFlickrPhotoTVC.h; sourceTree = "<group>"; };
-		3DC5557817E401D10073BAC0 /* StanfordFlickrPhotoTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StanfordFlickrPhotoTVC.m; sourceTree = "<group>"; };
+		3DC5557717E401D00073BAC0 /* TagsFlickrPhotoTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagsFlickrPhotoTVC.h; sourceTree = "<group>"; };
+		3DC5557817E401D10073BAC0 /* TagsFlickrPhotoTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagsFlickrPhotoTVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +101,8 @@
 				3DC5555C17E3F7B00073BAC0 /* MainStoryboard.storyboard */,
 				3DC5557417E3FC900073BAC0 /* FlickrPhotoTVC.h */,
 				3DC5557517E3FC900073BAC0 /* FlickrPhotoTVC.m */,
-				3DC5557717E401D00073BAC0 /* StanfordFlickrPhotoTVC.h */,
-				3DC5557817E401D10073BAC0 /* StanfordFlickrPhotoTVC.m */,
+				3DC5557717E401D00073BAC0 /* TagsFlickrPhotoTVC.h */,
+				3DC5557817E401D10073BAC0 /* TagsFlickrPhotoTVC.m */,
 				3DC5557117E3FB900073BAC0 /* ImageViewController.h */,
 				3DC5557217E3FB900073BAC0 /* ImageViewController.m */,
 				3DC5557017E3FAE80073BAC0 /* Images */,
@@ -221,7 +221,7 @@
 				3DC5556B17E3F8BD0073BAC0 /* FlickrFetcher.m in Sources */,
 				3DC5557317E3FB900073BAC0 /* ImageViewController.m in Sources */,
 				3DC5557617E3FC900073BAC0 /* FlickrPhotoTVC.m in Sources */,
-				3DC5557917E401D10073BAC0 /* StanfordFlickrPhotoTVC.m in Sources */,
+				3DC5557917E401D10073BAC0 /* TagsFlickrPhotoTVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +344,7 @@
 				3DC5556617E3F7B00073BAC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

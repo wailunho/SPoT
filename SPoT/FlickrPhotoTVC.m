@@ -28,7 +28,7 @@
 
 - (NSString *)subtitleForRow:(NSUInteger)row
 {
-    return [self.photos[row][FLICKR_PHOTO_OWNER] description]; 
+    return [self.photos[row] valueForKeyPath:FLICKR_PHOTO_DESCRIPTION];
 }
 
 #pragma mark - Table view data source
@@ -53,13 +53,15 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    NSLog(@"hi");
     if ([sender isKindOfClass:[UITableViewCell class]]) {
         NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
         if (indexPath) {
-            if ([segue.identifier isEqualToString:@"Show PhotoTable"]) {
-                NSLog(@"hi");
-                
+            if ([segue.identifier isEqualToString:@"Show Photo"]) {
+                if ([segue.destinationViewController respondsToSelector:@selector(setImageURL:)]) {
+                    NSURL *url = [FlickrFetcher urlForPhoto:self.photos[indexPath.row] format:FlickrPhotoFormatLarge];
+                    [segue.destinationViewController performSelector:@selector(setImageURL:) withObject:url];
+                    [segue.destinationViewController setTitle:[self titleForRow:indexPath.row]];
+                }
             }
         }
     }

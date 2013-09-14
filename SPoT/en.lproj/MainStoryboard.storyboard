@@ -4,12 +4,12 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--Stanford Flickr PhotoTVC - Feature-->
+        <!--Tags Flickr PhotoTVC - SPoT-->
         <scene sceneID="e9I-1s-vqj">
             <objects>
-                <tableViewController id="eKL-rD-lPE" customClass="StanfordFlickrPhotoTVC" sceneMemberID="viewController">
+                <tableViewController id="eKL-rD-lPE" customClass="TagsFlickrPhotoTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="quR-BK-3AT">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -34,7 +34,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="e4V-V4-idg" kind="push" id="qQ6-PX-TeJ"/>
+                                    <segue destination="e4V-V4-idg" kind="push" identifier="Show PhotoTable" id="qQ6-PX-TeJ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -43,27 +43,26 @@
                             <outlet property="delegate" destination="eKL-rD-lPE" id="3Rd-vC-vyk"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Feature" image="camera.png" id="6Sr-ka-hhv"/>
+                    <navigationItem key="navigationItem" title="SPoT" id="nno-62-kgG"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Bd-nq-0Li" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="373" y="-753"/>
+            <point key="canvasLocation" x="899" y="-753"/>
         </scene>
-        <!--Flickr PhotoTVC - Title-->
+        <!--Flickr PhotoTVC - Tag-->
         <scene sceneID="hdT-la-p4B">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mwb-45-z1G" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="e4V-V4-idg" customClass="FlickrPhotoTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="X5h-Ay-IUC">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Photo" textLabel="qQx-kd-voM" detailTextLabel="AUp-zr-uCe" style="IBUITableViewCellStyleSubtitle" id="5dw-UL-Zi7">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Photo" textLabel="qQx-kd-voM" detailTextLabel="AUp-zr-uCe" style="IBUITableViewCellStyleSubtitle" id="5dw-UL-Zi7">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQx-kd-voM">
@@ -79,6 +78,9 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <connections>
+                                    <segue destination="vUJ-ln-7z1" kind="push" identifier="Show Photo" id="Phg-LC-joJ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -86,10 +88,11 @@
                             <outlet property="delegate" destination="e4V-V4-idg" id="7zL-No-OMQ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Title" id="s1D-HB-2yK"/>
+                    <navigationItem key="navigationItem" title="Tag" id="s1D-HB-2yK"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mwb-45-z1G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="836" y="-756"/>
+            <point key="canvasLocation" x="1362" y="-756"/>
         </scene>
         <!--Table View Controller - Recent-->
         <scene sceneID="rkX-B1-qni">
@@ -121,12 +124,12 @@
             </objects>
             <point key="canvasLocation" x="376" y="-24"/>
         </scene>
-        <!--Image View Controller-->
+        <!--Image View Controller - Photo title-->
         <scene sceneID="NDv-lU-TWE">
             <objects>
                 <viewController id="vUJ-ln-7z1" customClass="ImageViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YcJ-QC-NnP">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HGa-rL-GFd"/>
@@ -139,29 +142,52 @@
                             <constraint firstItem="HGa-rL-GFd" firstAttribute="leading" secondItem="YcJ-QC-NnP" secondAttribute="leading" type="default" id="y2e-wp-x9h"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Photo title" id="fSJ-FW-bcF"/>
+                    <connections>
+                        <outlet property="scrollView" destination="HGa-rL-GFd" id="aci-tq-mbi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RSj-Ce-RyH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1284" y="-386"/>
+            <point key="canvasLocation" x="1808" y="-342"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Wfk-bJ-dAi">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="lzz-lM-P0S" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="H5o-zG-sXh">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="eKL-rD-lPE" kind="relationship" relationship="viewControllers" id="mXV-a7-sJm"/>
+                        <segue destination="scZ-AN-uY0" kind="relationship" relationship="viewControllers" id="mXV-a7-sJm"/>
                         <segue destination="ZUk-qn-0WV" kind="relationship" relationship="viewControllers" id="FfO-ev-54v"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4da-ri-zIF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-171" y="-386"/>
+        </scene>
+        <!--Navigation Controller - Feature-->
+        <scene sceneID="ZXk-vG-A4q">
+            <objects>
+                <navigationController id="scZ-AN-uY0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Feature" image="camera.png" id="6Sr-ka-hhv"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bw3-9s-tHV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eKL-rD-lPE" kind="relationship" relationship="rootViewController" id="3tQ-oq-fiY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eNh-OB-26d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="373" y="-753"/>
         </scene>
     </scenes>
     <resources>
@@ -174,12 +200,15 @@
         </class>
         <class className="ImageViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ImageViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
-        <class className="StanfordFlickrPhotoTVC" superclassName="FlickrPhotoTVC">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/StanfordFlickrPhotoTVC.h"/>
+        <class className="TagsFlickrPhotoTVC" superclassName="FlickrPhotoTVC">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TagsFlickrPhotoTVC.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
