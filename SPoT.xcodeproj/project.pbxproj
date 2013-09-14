@@ -17,7 +17,12 @@
 		3DC5555917E3F7B00073BAC0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DC5555817E3F7B00073BAC0 /* Default@2x.png */; };
 		3DC5555B17E3F7B00073BAC0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DC5555A17E3F7B00073BAC0 /* Default-568h@2x.png */; };
 		3DC5555E17E3F7B00073BAC0 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC5555C17E3F7B00073BAC0 /* MainStoryboard.storyboard */; };
-		3DC5556117E3F7B00073BAC0 /* SPoTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC5556017E3F7B00073BAC0 /* SPoTViewController.m */; };
+		3DC5556B17E3F8BD0073BAC0 /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC5556A17E3F8BD0073BAC0 /* FlickrFetcher.m */; };
+		3DC5556E17E3FADF0073BAC0 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DC5556C17E3FADF0073BAC0 /* camera.png */; };
+		3DC5556F17E3FADF0073BAC0 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DC5556D17E3FADF0073BAC0 /* clock.png */; };
+		3DC5557317E3FB900073BAC0 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC5557217E3FB900073BAC0 /* ImageViewController.m */; };
+		3DC5557617E3FC900073BAC0 /* FlickrPhotoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC5557517E3FC900073BAC0 /* FlickrPhotoTVC.m */; };
+		3DC5557917E401D10073BAC0 /* StanfordFlickrPhotoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC5557817E401D10073BAC0 /* StanfordFlickrPhotoTVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +40,17 @@
 		3DC5555817E3F7B00073BAC0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		3DC5555A17E3F7B00073BAC0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3DC5555D17E3F7B00073BAC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		3DC5555F17E3F7B00073BAC0 /* SPoTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPoTViewController.h; sourceTree = "<group>"; };
-		3DC5556017E3F7B00073BAC0 /* SPoTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPoTViewController.m; sourceTree = "<group>"; };
+		3DC5556817E3F8BD0073BAC0 /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
+		3DC5556917E3F8BD0073BAC0 /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
+		3DC5556A17E3F8BD0073BAC0 /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
+		3DC5556C17E3FADF0073BAC0 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = camera.png; path = Images/camera.png; sourceTree = "<group>"; };
+		3DC5556D17E3FADF0073BAC0 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = clock.png; path = Images/clock.png; sourceTree = "<group>"; };
+		3DC5557117E3FB900073BAC0 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		3DC5557217E3FB900073BAC0 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		3DC5557417E3FC900073BAC0 /* FlickrPhotoTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoTVC.h; sourceTree = "<group>"; };
+		3DC5557517E3FC900073BAC0 /* FlickrPhotoTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoTVC.m; sourceTree = "<group>"; };
+		3DC5557717E401D00073BAC0 /* StanfordFlickrPhotoTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StanfordFlickrPhotoTVC.h; sourceTree = "<group>"; };
+		3DC5557817E401D10073BAC0 /* StanfordFlickrPhotoTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StanfordFlickrPhotoTVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				3DC5554A17E3F7B00073BAC0 /* SPoT */,
+				3DC5556717E3F8BD0073BAC0 /* FlickrFetcher */,
 				3DC5554317E3F7B00073BAC0 /* Frameworks */,
 				3DC5554217E3F7B00073BAC0 /* Products */,
 			);
@@ -83,11 +98,14 @@
 		3DC5554A17E3F7B00073BAC0 /* SPoT */ = {
 			isa = PBXGroup;
 			children = (
-				3DC5555317E3F7B00073BAC0 /* SPoTAppDelegate.h */,
-				3DC5555417E3F7B00073BAC0 /* SPoTAppDelegate.m */,
 				3DC5555C17E3F7B00073BAC0 /* MainStoryboard.storyboard */,
-				3DC5555F17E3F7B00073BAC0 /* SPoTViewController.h */,
-				3DC5556017E3F7B00073BAC0 /* SPoTViewController.m */,
+				3DC5557417E3FC900073BAC0 /* FlickrPhotoTVC.h */,
+				3DC5557517E3FC900073BAC0 /* FlickrPhotoTVC.m */,
+				3DC5557717E401D00073BAC0 /* StanfordFlickrPhotoTVC.h */,
+				3DC5557817E401D10073BAC0 /* StanfordFlickrPhotoTVC.m */,
+				3DC5557117E3FB900073BAC0 /* ImageViewController.h */,
+				3DC5557217E3FB900073BAC0 /* ImageViewController.m */,
+				3DC5557017E3FAE80073BAC0 /* Images */,
 				3DC5554B17E3F7B00073BAC0 /* Supporting Files */,
 			);
 			path = SPoT;
@@ -96,6 +114,8 @@
 		3DC5554B17E3F7B00073BAC0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3DC5555317E3F7B00073BAC0 /* SPoTAppDelegate.h */,
+				3DC5555417E3F7B00073BAC0 /* SPoTAppDelegate.m */,
 				3DC5554C17E3F7B00073BAC0 /* SPoT-Info.plist */,
 				3DC5554D17E3F7B00073BAC0 /* InfoPlist.strings */,
 				3DC5555017E3F7B00073BAC0 /* main.m */,
@@ -105,6 +125,26 @@
 				3DC5555A17E3F7B00073BAC0 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DC5556717E3F8BD0073BAC0 /* FlickrFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				3DC5556817E3F8BD0073BAC0 /* FlickrAPIKey.h */,
+				3DC5556917E3F8BD0073BAC0 /* FlickrFetcher.h */,
+				3DC5556A17E3F8BD0073BAC0 /* FlickrFetcher.m */,
+			);
+			name = FlickrFetcher;
+			path = SPoT/FlickrFetcher;
+			sourceTree = "<group>";
+		};
+		3DC5557017E3FAE80073BAC0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3DC5556C17E3FADF0073BAC0 /* camera.png */,
+				3DC5556D17E3FADF0073BAC0 /* clock.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +204,8 @@
 				3DC5555917E3F7B00073BAC0 /* Default@2x.png in Resources */,
 				3DC5555B17E3F7B00073BAC0 /* Default-568h@2x.png in Resources */,
 				3DC5555E17E3F7B00073BAC0 /* MainStoryboard.storyboard in Resources */,
+				3DC5556E17E3FADF0073BAC0 /* camera.png in Resources */,
+				3DC5556F17E3FADF0073BAC0 /* clock.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +218,10 @@
 			files = (
 				3DC5555117E3F7B00073BAC0 /* main.m in Sources */,
 				3DC5555517E3F7B00073BAC0 /* SPoTAppDelegate.m in Sources */,
-				3DC5556117E3F7B00073BAC0 /* SPoTViewController.m in Sources */,
+				3DC5556B17E3F8BD0073BAC0 /* FlickrFetcher.m in Sources */,
+				3DC5557317E3FB900073BAC0 /* ImageViewController.m in Sources */,
+				3DC5557617E3FC900073BAC0 /* FlickrPhotoTVC.m in Sources */,
+				3DC5557917E401D10073BAC0 /* StanfordFlickrPhotoTVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
