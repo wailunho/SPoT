@@ -113,7 +113,7 @@
             {
                 if([segue.destinationViewController respondsToSelector:@selector(setPhotos:)])
                 {
-                    NSString *tag = [self tagForRow:indexPath.row];
+                    NSString *tag = self.sortedTagsInArray[indexPath.row];
                     //Photos are sorted by their titles only.
                     NSArray *sortedPhotos = [[NSArray alloc] initWithArray:[self.photosByTags[tag] sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
                         NSDictionary *photo1 = obj1;
